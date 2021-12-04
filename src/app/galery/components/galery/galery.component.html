@@ -1,0 +1,32 @@
+<app-header></app-header>
+<app-my-menu></app-my-menu>
+
+<div class="center background">
+    <br>
+    <br>
+    <h2 class="title">Galeria</h2>
+    <br>
+</div>
+
+<div *ngFor="let dataGalery of galery">
+
+    <app-image-galery [data]="dataGalery.url"></app-image-galery>
+</div>
+
+<div class="center background">
+    <br>
+    <br>
+    <h2 class="title">Videos</h2>
+    <br>
+</div>
+
+<div *ngFor="let dataVideo of videos">
+
+    <app-video [data]="dataVideo.url"></app-video>
+</div>
+
+
+
+
+
+
