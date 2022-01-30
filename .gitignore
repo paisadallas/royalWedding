@@ -50,3 +50,6 @@ Thumbs.db
 
 #image
 /src/assets/images
+
+#dist
+/dist
