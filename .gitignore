@@ -52,4 +52,4 @@ Thumbs.db
 /src/assets/images
 
 #firebase 
-/functions/firebase-debug.log
+/functions
