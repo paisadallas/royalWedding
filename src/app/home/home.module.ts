@@ -15,6 +15,10 @@ import {MaterialModule} from './../material/material.module';
     RouterModule,
     SharedModule,
     MaterialModule
+  ],
+  exports:[
+    HomeComponent,
+    MarcoComponent
   ]
 })
 export class HomeModule { }

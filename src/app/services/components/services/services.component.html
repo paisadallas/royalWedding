@@ -1,2 +1,24 @@
 <app-header></app-header>
 <app-my-menu></app-my-menu>
+
+<br>
+<h1 class="title">Experts in quinceañeras and wedding </h1>
+<h2 class="text">
+    We are a team of professionals with more than 5 years of experience,
+    we are proud and 100% committed on bring you the best memories of your
+    special day. We make photos and cinematic videos using the newest equipments
+    to bring you the best quality for you. We know what your special day means for you,
+    so we feel it like if it was ours!! Many satisfied clients give us the motivation
+    to keep bringing for you lots of smiles when you see your moments on our photos and videos. 
+    Feel confident to leave your memories in our hands!!
+
+</h2>
+
+<div *ngFor="let dataPackage of dataEs">
+    <app-package [data]="dataPackage"></app-package>
+</div>
+
+<app-calendar></app-calendar>
+<app-footer></app-footer>
+
+

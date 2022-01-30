@@ -1,0 +1,18 @@
+<app-header></app-header>
+<app-my-menu-es></app-my-menu-es>
+
+<div class="center background">
+    <br>
+    <br>
+    <h2 class="title">Galeria</h2>
+    <br>
+</div>
+
+<div *ngFor="let dataGalery of galery">
+
+    <app-image-galery [data]="dataGalery.url" [dataRight]="dataGalery.url2"></app-image-galery>
+</div>
+
+
+<app-calendar-es></app-calendar-es>
+<app-footer></app-footer>

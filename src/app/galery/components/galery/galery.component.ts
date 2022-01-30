@@ -19,8 +19,7 @@ export class GaleryComponent implements OnInit {
 
     //Galery
     this.route.params.subscribe((params:Params) =>{
-      this.galery = this.galeryServices.getGalery();
-
+      this.galery = this.galeryServices.getGalery();     
       this.videos = this.galeryServices.getVideo();
     })
   }

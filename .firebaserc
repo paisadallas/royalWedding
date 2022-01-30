@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "royalwedding-c26f1"
+  },
+  "targets": {
+    "royalwedding-c26f1": {
+      "hosting": {
+        "royalWedding": [
+          "royalwedding-c26f1"
+        ]
+      }
+    }
   }
 }

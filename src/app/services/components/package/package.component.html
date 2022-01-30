@@ -1,0 +1,28 @@
+<div class="row">
+
+    <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <mat-card class="demo-inline-calendar-card"> 
+            <h1 class="title">{{data.title}}</h1>
+
+            <mat-card>
+                <img class="image" src={{data.image}}>
+            </mat-card>
+            <br>
+
+            <div *ngFor="let services of data.services">
+                <app-items [data]="services.name"></app-items>
+            </div>
+            <div class="container">
+                <br>
+                <h2 class="price">{{data.price}}</h2>
+            </div>
+        </mat-card>
+    </div>
+
+    <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+
+</div>
+
+<br>

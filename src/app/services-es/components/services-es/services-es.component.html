@@ -1,0 +1,22 @@
+<app-header></app-header>
+<app-my-menu-es></app-my-menu-es>
+
+<br>
+<h1 class="title">Expertos en bodas y quinceañeras</h1>
+<h2 class="text">
+    Somos un equipo de profesionales con más de 5 años de experiencia,
+    estamos orgullosos y 100% comprometidos en traerte los mejores recuerdos
+    de tu día especial. Hacemos fotos y videos cinematográficos utilizando los
+    equipos más nuevos para brindarle la mejor calidad. Sabemos lo que significa
+    tu día especial para ti, ¡así que lo sentimos como si fuera nuestro! Muchos 
+    clientes satisfechos nos dan la motivación para seguir brindándote muchas 
+    sonrisas cuando veas tus momentos en nuestras fotos y videos. ¡¡Siéntete seguro
+    de dejar tus recuerdos en nuestras manos !!
+</h2>
+
+<div *ngFor="let dataPackage of dataEs">
+    <app-package [data]="dataPackage"></app-package>
+</div>
+
+<app-calendar-es></app-calendar-es>
+<app-footer></app-footer>

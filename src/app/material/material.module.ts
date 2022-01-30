@@ -5,6 +5,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [],
@@ -14,14 +16,18 @@ import {MatButtonModule} from '@angular/material/button';
     MatCardModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatExpansionModule
   ],
   exports:[
     MatNativeDateModule,
     MatCardModule,
     MatDatepickerModule,
     MatRadioModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatExpansionModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

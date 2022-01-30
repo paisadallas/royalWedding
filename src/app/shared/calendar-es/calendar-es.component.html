@@ -1,0 +1,90 @@
+<div class="center background">
+    <br>
+    <br>
+    <h2 class="title">Agenta tu cita</h2>
+    <br>
+</div>
+<br>
+
+ <div class="center">
+
+        <h2 >Fecha del evento</h2>
+    </div>
+<div class="row ">
+
+   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
+          <mat-card class="demo-inline-calendar-card">
+            <mat-calendar (selectedChange)="selected = $event"></mat-calendar>
+        </mat-card>
+        <p>Selected date: {{selected}}</p>
+    
+    </div>
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
+  
+</div>
+
+<!-- FORM CONTROL-->
+
+<div class="row ">
+
+   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
+
+<mat-card>
+    <mat-form-field class="example-full-width" appearance="fill">      
+        <input matInput class="style" placeholder="    *Name" type="text" [formControl]="nameFiel">       
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill" >
+        
+        <input matInput class="style" placeholder="    *Email" type="text" [formControl]="emailFiel">
+        
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        
+        <input matInput class="style" placeholder="    *Phone" type="text" [formControl]="phoneFiel">
+        
+    </mat-form-field>
+</mat-card>
+    
+    </div>
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
+  
+</div>
+
+<br>
+
+<!--RADIO BUTTON-->
+
+
+<div class="row ">
+
+   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
+
+    <mat-card>
+    <label id="example-radio-group-label">Prefiero ser contactado en:</label>
+<mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  
+ >
+  <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+    {{season}}
+  </mat-radio-button>
+</mat-radio-group>
+
+<div class="center">
+
+    <button mat-raised-button>Enviar</button>
+</div>
+
+</mat-card>
+
+    </div>
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
+  
+</div>

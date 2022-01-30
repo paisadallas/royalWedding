@@ -4,12 +4,12 @@
 <div class="row ">
 
    
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>
-    <div class="  col-xs-12 col-sm-12 col-md-4 col-lg-4">   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
           <mat-card class="demo-inline-calendar-card">
             
             <video  controls width="100%" height="auto" #myVideo  preload="auto" >
-                <source src='./../../../../assets/video/Reel AriandaHD.mp4' type="video/mp4">
+                <source src='./../../../../assets/video/5.mp4' type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
             Your browser does not support the video tag.
             </video>
@@ -18,7 +18,7 @@
      
     
     </div>
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
   
 </div>
 
@@ -27,7 +27,8 @@
 
 
 
-<app-marco></app-marco>
+<app-marco [Image]="imageOne"></app-marco>
+<app-marco [Image]="imageFour"></app-marco>
 
 <app-calendar></app-calendar>
 
@@ -36,25 +37,25 @@
 <div class="row ">
 
    
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>
-    <div class="  col-xs-12 col-sm-12 col-md-4 col-lg-4">   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
           <mat-card class="demo-inline-calendar-card">
                 <h2 class="title"> Se acerca tu quinceañera</h2>
 
     <p>
-        Royal Wedding es una compañía de fotografía y video
-         ubicada en el área de Houston. Nuestra especialidad y
-          expertise son las quinceañeras. Nuestro trabajo es de lujo, 
-          vibrante, brillante y colorido. Tenemos años de experiencia y 
-          estamos 100% enfocados en ayudarlo a usted a que su día especial 
-          sea lo mejor que pueda ser. Contáctenos ahora para ver por qué tantas 
-          familias en Houston tienen confianza en nuestro trabajo.
+        Royal Wedding is a photography and video company
+          located in the Houston area. Our specialty and
+           expertise are quinceañeras. Our work is luxurious,
+           vibrant, bright and colorful. We have years of experience and
+           we are 100% focused on helping you make your special day
+           be the best it can be. Contact us now to see why so many
+           families in Houston have confidence in our work.
     </p>
         </mat-card>
       
     
     </div>
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
   
 </div>
 <br>
@@ -63,7 +64,7 @@
 <div class="center background">
     <br>
     <br>
-    <h2 class="title">Servicios que ofrecemos</h2>
+    <h2 class="title">Our services</h2>
     <br>
 </div>
 <br>
@@ -71,39 +72,41 @@
 <div class="row ">
 
    
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>
-    <div class="  col-xs-12 col-sm-12 col-md-4 col-lg-4">   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
           <mat-card class="demo-inline-calendar-card">
             
         
 
-            <app-marco></app-marco>
+            <app-marco [Image]="imageTwo"></app-marco>
 
             <div class="services"> 
-                <h2>Servicio de fotografia</h2>
-                <p>Entrega USB</p>
-                <p>Entrega digital</p>
-                <p>Impresiones</p>
-                <p>Albumes de fotos</p>
+                <h2>Photo services</h2>
+                <p>USB photography</p>
+                <p>Digital photography</p>
+                <p>Photo impressions</p>
+                <p>Photo almbus</p>
                 <p>        
-                    Una imagen dice mil palabras. Trabajaremos
-                    con usted y haremos todo lo que esté a nuestro
-                    alcance para asegurarnos de que su evento sea 
-                    capturado de la mejor manera posible.
+                    A picture says a thousand words. We will work
+                    with you and we will do everything in our power
+                    reach to make sure your event is
+                    captured in the best possible way.
                 </p>
             </div>
 
 
             <div class="center">
 
-                <button class="buttonMuestras">Ver muestras</button>
+                <button class="buttonMuestras"
+                routerLink="/galery"
+                >Samples</button>
             </div>
 
         </mat-card>
        
     
     </div>
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
   
 </div>
 <br>
@@ -115,8 +118,8 @@
 <div class="row ">
 
    
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>
-    <div class="  col-xs-12 col-sm-12 col-md-4 col-lg-4">   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
           <mat-card class="demo-inline-calendar-card">
 
             <mat-card>
@@ -133,26 +136,26 @@
 
             
                         <div class="services"> 
-                <h2>Servicio de Video</h2>
-                <p>Entrega USB</p>
-                <p>Entrega digital</p>
+                <h2>Video Service</h2>
+                <p>USB video</p>
+                <p>Digital video</p>
                 <p>Blu Ray</p>
                 <p>Video Drone</p>
                 <p>        
-                    Si vale la pena vivir, vale la pena recordarlo. 
-                    Permítanos crear una obra maestra de su evento, 
-                    para que pueda tener los recuerdos para todas las 
-                    generaciones venideras.
+                    If life is worth living, it is worth remembering.
+                     Let us create a masterpiece of your event,
+                     so you can have the memories for all
+                     generations to come.
                 </p>
             </div>
             <div class="center">
-                <button class="buttonMuestras">Ver muestras</button>
+                <button class="buttonMuestras" routerLink="videos">Sample</button>
             </div>
         </mat-card>
         
     
     </div>
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
   
 </div>
 
@@ -162,23 +165,23 @@
 <div class="row ">
 
    
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>
-    <div class="  col-xs-12 col-sm-12 col-md-4 col-lg-4">   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8">   
           <mat-card class="demo-inline-calendar-card">
            
             <div class="services"> 
-                <h2>RESERVA TU FECHA CON SOLO $500 DE ANTICIPO!  LLÁMANOS AHORA!!</h2>
+                <h2>SAVE YOUR DATE WITH ONLY $ 500 IN ADVANCE! CALL US NOW!!</h2>
             </div>
             <div class="center">
 
-                <button class="buttonMuestras">Click para llamar</button>
+                <button (click)="call()" class="buttonMuestras">Call Us</button>
             </div>
 
             <div class="services"> 
-                <h3>Te gustaría  ver nuestro
-                    trabajo en persona?</h3>
-                <p>CONTÁCTANOS PARA UNA CITA GRATIS!</p>
-                <p>Te mostraremos nuestros albums, ejemplos de video, marcos, etc.</p>
+                <h3>Would you like to see our
+                    work in person?</h3>
+                <p>FREE APPOINTMENT</p>
+                <p>We will show you our albums, video examples, photos, etc.</p>
 
             </div>
 
@@ -186,7 +189,43 @@
       
     
     </div>
-    <div class="  col-xs-0 col-sm-0 col-md-4 col-lg-4">    </div>   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
+  
+</div>
+
+<!--ABOUT US-->
+<div class="center background">
+    <br>
+    <br>
+    <h2 class="title">About Us</h2>
+    <br>
+</div>
+<br>
+<app-marco [Image]="imageThree"></app-marco>
+
+
+
+
+
+
+
+<div class="row ">
+
+   
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>
+    <div class="  col-xs-12 col-sm-12 col-md-10 col-lg-8 center">   
+
+  
+    <h2>Victor Ixmata</h2>
+    <p>I have always been a passionate person for my work, with more than 5 years of experience 
+         in the world of wedding and quinceañera events always at the forefront
+        and in constant improvement in order to provide the best memory of that date so
+        important to you and your family.
+    </p>
+
+    
+    </div>
+    <div class="  col-xs-0 col-sm-0 col-md-1 col-lg-2">    </div>   
   
 </div>
 

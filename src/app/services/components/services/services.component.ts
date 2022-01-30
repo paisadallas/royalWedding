@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import {PackageService} from './../../../core/data/package.service';
 
 @Component({
   selector: 'app-services',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
 
-  constructor() { }
+  dataEs
+  constructor(
+    private dataPackage:PackageService,
+    private route:ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params:Params) =>{
+      this.dataEs = this.dataPackage.getPackageEs();
+    })
   }
 
 }

@@ -1,0 +1,16 @@
+<app-header></app-header>
+<app-my-menu-es></app-my-menu-es>
+<div class="center background">
+    <br>
+    <br>
+    <h2 class="title">Videos</h2>
+    <br>
+</div>
+
+<div *ngFor="let dataVideo of videos">
+
+    <app-video [data]="dataVideo.url"></app-video>
+</div>
+
+<app-calendar-es></app-calendar-es>
+<app-footer></app-footer>

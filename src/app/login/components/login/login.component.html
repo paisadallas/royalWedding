@@ -1,0 +1,27 @@
+<div class="column">
+<br>
+    <p class="title">Royal wedding envents</p>
+    <br>
+      <input type="password" id="item-input" #newItem>
+  
+    <br>
+    <br>
+    <button mat-raised-button color="primary" (click)="addPassword(newItem.value)">Enter</button>
+    <br>
+    <br>
+</div>
+
+<div *ngIf="incorrect" class="column">
+  <p class="colorPassword">Password incorrect</p>
+</div>
+
+<div *ngIf="showCustomer">
+  
+  
+  <div *ngFor="let dataCustomer of customer">
+    <app-user [data]="dataCustomer"></app-user>
+    
+</div>
+  
+</div>
+
